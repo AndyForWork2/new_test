@@ -1,7 +1,7 @@
 #/bin/bash
 cd -P $(dirname "${BASH_SOURCE[0]}")
 pwd
-cd ./iPerf
+cd ../iPerf
 bash configure
 make
 cd ..
