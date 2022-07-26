@@ -1,6 +1,9 @@
 #/bin/bash
 cd "$(dirname -- "$(readlink -f "${BASH_SOURCE}")")"
+pwd
+ls -a
 cd ..
+ls -a
 pwd
 cd ./iPerf
 bash configure
