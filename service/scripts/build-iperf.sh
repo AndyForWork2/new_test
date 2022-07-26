@@ -1,4 +1,4 @@
-#/bin/sh
+#/bin/bash
 cd -P $(dirname "${BASH_SOURCE[0]}")
 cd ../iPerf
 bash configure
