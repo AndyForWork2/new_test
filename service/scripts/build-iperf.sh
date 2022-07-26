@@ -1,5 +1,5 @@
 #/bin/bash
-cd -P $(dirname "${BASH_SOURCE[0]}")
+cd  $(dirname "${BASH_SOURCE[0]}")
 pwd
 cd ../iPerf
 bash configure
