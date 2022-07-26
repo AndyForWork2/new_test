@@ -1,7 +1,6 @@
 #/bin/bash
 cd "$(dirname -- "$(readlink -f "${BASH_SOURCE}")")"
 echo "***************************************"
-sleep 15
 pwd
 cd ..
 pwd
