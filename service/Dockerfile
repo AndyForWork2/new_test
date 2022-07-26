@@ -9,4 +9,4 @@ COPY . .
 RUN chmod +x ./scripts/build-iperf.sh && \
     ./scripts/build-iperf.sh && \
     
-CMD ["echo","end"]
+CMD echo "end"
