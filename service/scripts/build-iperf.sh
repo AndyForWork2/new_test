@@ -1,11 +1,8 @@
 #/bin/bash
 cd "$(dirname -- "$(readlink -f "${BASH_SOURCE}")")"
+cd ..
 pwd
-cd..
-pwd
-echo "**************************************"
-sleep 15
-cd ../iPerf
+cd ./iPerf
 bash configure
 make
 cd ..
