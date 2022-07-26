@@ -1,12 +1,8 @@
-#/bin/bash
-echo "1"
+#/bin/sh
 cd -P $(dirname "${BASH_SOURCE[0]}")
-echo "2"
+pwd
 cd ../iPerf
-echo "3"
 bash configure
 make
-echo "4"
 cd ..
 cp ./iPerf/src/iperf iperf.elf
-echo "5"
