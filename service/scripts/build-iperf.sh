@@ -1,10 +1,9 @@
 #/bin/bash
 cd "$(dirname -- "$(readlink -f "${BASH_SOURCE}")")"
-pwd
-ls -a
-cd ..
-ls -a
-pwd
+if $(pwd)!=*/service
+then
+  cd service
+fi
 cd ./iPerf
 bash configure
 make
