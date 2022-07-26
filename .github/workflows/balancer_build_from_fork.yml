@@ -1,4 +1,4 @@
-ame: "[Balancer] build image from fork"
+name: "[Balancer] build image from fork"
 
 on: 
   pull_request:
@@ -12,8 +12,8 @@ jobs:
         working-directory: ./balancer
     steps:
       - uses: actions/checkout@v2
-        with:
-          token: ${{secrets.PERSONAL_ACCESS_TOKEN_GITHUB }}
-      - name: build from fork
-        run: docker build --tag new_balancer_image .
+
+      - name: buildx image
+        run: |
+          docker build . --tag new_balancer_image
       
