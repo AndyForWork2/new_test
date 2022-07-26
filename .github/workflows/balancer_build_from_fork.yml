@@ -12,6 +12,8 @@ jobs:
         working-directory: ./balancer
     steps:
       - uses: actions/checkout@v2
+        with:
+          token: ${{secrets.PERSONAL_ACCESS_TOKEN_GITHUB}}
 
       - name: buildx image
         run: |
